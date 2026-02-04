@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Karl Galliano - A-Level Student studying Mathematics, Further Mathematics, Biology and Chemistry">
+    <meta name="description" content="Karl Galliano - Year 12 Student at Bayside Comprehensive School, Gibraltar. Passionate about Biology, Immunology, and App Development.">
     <meta name="author" content="Karl Galliano">
-    <title>Karl Galliano</title>
+    <meta name="keywords" content="Karl Galliano, Gibraltar, A-Level Student, Biology, App Development, Lockin.tech, Flutter Developer">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://karlgalliano.me/">
+    <meta property="og:title" content="Karl Galliano | Student & Developer">
+    <meta property="og:description" content="Year 12 Student at Bayside Comprehensive School, Gibraltar. Passionate about Biology, Immunology, and App Development.">
+    <meta property="og:image" content="https://karlgalliano.me/og-image.svg">
+    <meta property="og:site_name" content="Karl Galliano">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Karl Galliano | Student & Developer">
+    <meta name="twitter:description" content="Year 12 Student at Bayside Comprehensive School, Gibraltar. Passionate about Biology, Immunology, and App Development.">
+    <meta name="twitter:image" content="https://karlgalliano.me/og-image.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://karlgalliano.me/">
+    
+    <title>Karl Galliano | Year 12 Student &amp; Developer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +36,20 @@
     
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-first">Karl</span><span class="logo-second">Galliano</span>
             </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,15 +62,28 @@
                 <div class="gradient-orb orb-3"></div>
             </div>
             <div class="container hero-content">
-                <p class="hero-label">Student & Developer</p>
+                <p class="hero-label">Year 12 Student | Biology &amp; App Development | Gibraltar</p>
                 <h1 class="hero-title">
                     <span class="title-line">Karl</span>
                     <span class="title-line">Galliano</span>
                 </h1>
-                <p class="hero-desc">A-Level student exploring the intersection of science, mathematics, and technology.</p>
+                <p class="hero-desc">A-Level student at Bayside Comprehensive School, passionate about immunology, neuroscience, and building apps that make a difference.</p>
                 <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get in touch</a>
-                    <a href="#about" class="btn btn-ghost">Learn more</a>
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="about.html" class="btn btn-ghost">About Me</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/karlgalliano" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="contact.html" aria-label="Contact">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -52,88 +92,173 @@
             </div>
         </section>
 
-        <section id="about" class="section about">
+        <!-- Featured Highlights Section -->
+        <section id="highlights" class="section highlights">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-header">
-                        <h2 class="section-title">About</h2>
+                <div class="section-intro">
+                    <h2 class="section-title-center">What I Do</h2>
+                    <p class="section-subtitle">Building apps, pursuing science, and developing leadership skills</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card featured">
+                        <div class="highlight-badge">Featured Project</div>
+                        <div class="highlight-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h3>Lockin.tech</h3>
+                        <p>An educational app built with Flutter/Dart, featuring subscription-based monetization through RevenueCat and Stripe payment integration.</p>
+                        <a href="projects.html" class="highlight-link">
+                            View Project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="section-content">
-                        <p class="lead">I'm Karl — a student with a passion for understanding how things work.</p>
-                        <p>Currently studying Mathematics, Further Mathematics, Biology, and Chemistry at A-Level. I'm fascinated by the way these subjects interconnect — from the elegant proofs in pure maths to the complex systems in biology.</p>
-                        <p>Outside of academics, I enjoy building things with code, exploring how technology can be used to solve real-world problems, and constantly learning new skills.</p>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Academic Focus</h3>
+                        <p>Studying Biology, Chemistry, Mathematics, and Further Mathematics at A-Level with a focus on immunology and neuroscience.</p>
+                        <a href="academic.html" class="highlight-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Aspiring Doctor</h3>
+                        <p>Passionate about medicine with a focus on immunology and neuroscience, aspiring to study Medicine at university.</p>
+                        <a href="about.html" class="highlight-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="section work">
+        <!-- Quick About Section -->
+        <section id="quick-about" class="section quick-about">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-header">
-                        <h2 class="section-title">Interests</h2>
+                <div class="quick-about-grid">
+                    <div class="quick-about-content">
+                        <h2 class="section-title">A bit about me</h2>
+                        <p class="lead">I'm a Year 12 student at Bayside Comprehensive School in Gibraltar, passionate about understanding how things work at both the molecular and digital level.</p>
+                        <p>My interests span from the intricacies of cell biology and the immune system to building mobile applications that solve real problems. I believe in combining scientific rigour with technical creativity to make a meaningful impact.</p>
+                        <a href="about.html" class="btn btn-primary">Read Full Bio</a>
                     </div>
-                    <div class="section-content">
-                        <div class="work-grid">
-                            <div class="work-card">
-                                <div class="work-card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                                    </svg>
-                                </div>
-                                <h3>Mathematics</h3>
-                                <p>From calculus to complex numbers — finding beauty in logic and abstract reasoning.</p>
-                            </div>
-                            <div class="work-card">
-                                <div class="work-card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <path d="M12 6v6l4 2"/>
-                                    </svg>
-                                </div>
-                                <h3>Sciences</h3>
-                                <p>Exploring Biology and Chemistry — understanding life at the molecular level.</p>
-                            </div>
-                            <div class="work-card">
-                                <div class="work-card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <polyline points="16 18 22 12 16 6"/>
-                                        <polyline points="8 6 2 12 8 18"/>
-                                    </svg>
-                                </div>
-                                <h3>Technology</h3>
-                                <p>Building projects and learning to code — turning ideas into reality.</p>
-                            </div>
+                    <div class="quick-about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">A-Level Subjects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Active App</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section contact">
+        <!-- Skills Preview -->
+        <section id="skills-preview" class="section skills-preview">
             <div class="container">
-                <div class="contact-content">
-                    <h2 class="contact-title">Get in touch</h2>
-                    <p class="contact-desc">Want to connect or have a question? Feel free to reach out.</p>
-                    <a href="mailto:gallianokarl359@gmail.com" class="contact-email">gallianokarl359@gmail.com</a>
-                    <div class="contact-links">
-                        <a href="https://github.com/karlgalliano" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                            </svg>
-                            GitHub
-                        </a>
+                <div class="section-intro">
+                    <h2 class="section-title-center">Skills &amp; Technologies</h2>
+                    <p class="section-subtitle">Tools and technologies I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Languages I Work With</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
                     </div>
+                    <div class="skill-category">
+                        <h4>Tools &amp; Platforms</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">RevenueCat</span>
+                            <span class="skill-tag">Stripe</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">English (Native)</span>
+                            <span class="skill-tag">Spanish (Native/Learning)</span>
+                            <span class="skill-tag">German (Learning)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Interested in working together?</h2>
+                    <p>Whether you have a question about my projects, academic work, or just want to connect — I'd love to hear from you.</p>
+                    <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Karl Galliano</p>
-            <p>Designed & Built by Karl Galliano</p>
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-brand-inline">
+                    <a href="index.html" class="logo">
+                        <span class="logo-first">Karl</span><span class="logo-second">Galliano</span>
+                    </a>
+                    <span class="footer-divider">|</span>
+                    <span class="footer-location">Gibraltar</span>
+                </div>
+                <div class="footer-social-inline">
+                    <a href="https://github.com/karlgalliano" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@karlgalliano.me" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom-compact">
+                <p>&copy; 2026 Karl Galliano</p>
+            </div>
         </div>
     </footer>
 

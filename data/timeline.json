@@ -1,0 +1,120 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "2015-12-01",
+      "title": "Year 2 Science Hall of Fame",
+      "description": "Joint 33rd place out of millions of participants in the World Education Games",
+      "category": "academic"
+    },
+    {
+      "id": 2,
+      "date": "2017-04-22",
+      "title": "Chief Scout's Bronze Award",
+      "description": "Received the highest award given to a Beaver for St George's Day 2017",
+      "category": "achievement"
+    },
+    {
+      "id": 3,
+      "date": "2018-03-15",
+      "title": "Gibraltar Chess Tournament",
+      "description": "3rd Place in Gibraltar Interschool Chess Tournament",
+      "category": "achievement"
+    },
+    {
+      "id": 4,
+      "date": "2019-03-22",
+      "title": "Gibraltar Chess Tournament",
+      "description": "1st Place (Group B) in Gibraltar Interschool Chess Tournament",
+      "category": "achievement"
+    },
+    {
+      "id": 5,
+      "startDate": "2019-05-25",
+      "endDate": "2019-05-31",
+      "title": "Phasels Wood Scout Camp",
+      "description": "Week-long camp at Phasels Wood Scout Activity Centre in Hertfordshire, England",
+      "category": "experience"
+    },
+    {
+      "id": 6,
+      "date": "2023-11-19",
+      "title": "ABRSM Music Theory Grade 4",
+      "description": "Passed with Merit",
+      "category": "academic"
+    },
+    {
+      "id": 7,
+      "date": "2025-03-27",
+      "title": "Commonwealth Essay Entry",
+      "description": "Entered essay to HM GoG titled \"What value does the Commonwealth bring to Gibraltar?\"",
+      "category": "academic"
+    },
+    {
+      "id": 8,
+      "startDate": "2025-05-12",
+      "endDate": "2025-06-17",
+      "title": "GCSE Examinations",
+      "description": "Completed GCSE exams in 10 subjects",
+      "category": "academic"
+    },
+    {
+      "id": 9,
+      "date": "2025-06-29",
+      "title": "Emergency First Aid Certification",
+      "description": "Completed Emergency First Aid at Work L3 (VTQ) - Health and Safety (First Aid) Regulations 1981",
+      "category": "certification"
+    },
+    {
+      "id": 10,
+      "date": "2025-07-02",
+      "title": "Started GSLA Level 2 Sports Leadership",
+      "description": "Began GSLA Level 2 Award in Sports Leadership programme",
+      "category": "certification"
+    },
+    {
+      "id": 11,
+      "date": "2025-07-10",
+      "title": "Mindspace Project Volunteering",
+      "description": "Volunteered in a week-long summer camp with The Mindspace Project",
+      "category": "volunteering"
+    },
+    {
+      "id": 12,
+      "startDate": "2025-07-21",
+      "endDate": "2025-08-20",
+      "title": "GSLA Summer Sports Programme",
+      "description": "Volunteering with the GSLA Summer Sports Programme as part of Sports Leadership Award",
+      "category": "volunteering"
+    },
+    {
+      "id": 13,
+      "date": "2025-08-28",
+      "title": "First Neuroscience Article",
+      "description": "Wrote first article on the neuroscience of memory and Alzheimer's Disease",
+      "category": "academic"
+    }
+  ],
+  "categories": {
+    "academic": {
+      "color": "#6366f1",
+      "label": "Academic"
+    },
+    "achievement": {
+      "color": "#f59e0b",
+      "label": "Achievement"
+    },
+    "experience": {
+      "color": "#10b981",
+      "label": "Experience"
+    },
+    "certification": {
+      "color": "#8b5cf6",
+      "label": "Certification"
+    },
+    "volunteering": {
+      "color": "#ec4899",
+      "label": "Volunteering"
+    }
+  }
+}
