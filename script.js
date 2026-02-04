@@ -73,7 +73,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe sections and content elements
-document.querySelectorAll('.section-content, .contact-content, .highlight-card, .subject-card, .subject-card-vertical, .research-card, .method-card, .project-card, .project-card-large, .skill-block, .study-block, .timeline-item, .bio-content, .bio-card, .goal-card, .contact-form-container, .contact-info, .project-main, .project-sidebar').forEach(el => {
+document.querySelectorAll('.section-content, .contact-content, .highlight-card, .subject-card, .subject-card-vertical, .research-card, .method-card, .project-card, .project-card-large, .skill-block, .study-block, .timeline-item, .bio-content, .bio-card, .goal-card, .contact-form-container, .contact-info, .project-main, .project-sidebar, .now-card').forEach(el => {
     observer.observe(el);
 });
 
@@ -81,7 +81,7 @@ document.querySelectorAll('.section-content, .contact-content, .highlight-card, 
 const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            const cards = entry.target.querySelectorAll('.work-card, .highlight-card, .subject-card, .subject-card-vertical, .research-card, .method-card, .project-card, .project-card-large, .goal-card, .study-block, .contact-form-container, .contact-info, .project-main, .project-sidebar');
+            const cards = entry.target.querySelectorAll('.work-card, .highlight-card, .subject-card, .subject-card-vertical, .research-card, .method-card, .project-card, .project-card-large, .goal-card, .study-block, .contact-form-container, .contact-info, .project-main, .project-sidebar, .now-card');
             cards.forEach((card, i) => {
                 setTimeout(() => {
                     card.classList.add('visible');
@@ -93,7 +93,7 @@ const cardObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 // Observe card containers
-document.querySelectorAll('.highlights-grid, .work-grid, .subjects-grid, .subjects-grid-compact, .research-grid, .methodology-grid, .projects-grid, .projects-grid-simple, .medicine-goals, .studies-grid, .contact-grid, .project-detail-grid').forEach(container => {
+document.querySelectorAll('.highlights-grid, .work-grid, .subjects-grid, .subjects-grid-compact, .research-grid, .methodology-grid, .projects-grid, .projects-grid-simple, .medicine-goals, .studies-grid, .contact-grid, .project-detail-grid, .now-grid').forEach(container => {
     cardObserver.observe(container);
 });
 
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Trigger animations for elements already in view
     setTimeout(() => {
-        document.querySelectorAll('.highlight-card, .project-card-large, .subject-card-vertical, .goal-card, .timeline-item').forEach(el => {
+        document.querySelectorAll('.highlight-card, .project-card-large, .subject-card-vertical, .goal-card, .timeline-item, .now-card').forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight * 0.9) {
                 el.classList.add('visible');
