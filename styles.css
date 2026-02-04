@@ -2211,6 +2211,11 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        margin: 0;
+        padding: 0;
         background: rgba(12, 12, 12, 0.98);
         flex-direction: column;
         justify-content: center;
