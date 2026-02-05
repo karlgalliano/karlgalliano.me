@@ -1,0 +1,19 @@
+User-agent: *
+# Allow everything by default
+Allow: /
+
+# Block raw data and config files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.yml$
+Disallow: /*.md$
+Disallow: /package.json
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /.gitignore
+
+# Allow the sitemap (essential exception)
+Allow: /sitemap.xml
+
+# Point to your sitemap
+Sitemap: https://karlgalliano.me/sitemap.xml
